@@ -15,7 +15,8 @@ const LinkedList = function(){
     this.head = () =>{
         return head;
     };
-
+    
+    //Add an iteam at the end of the list 
     this.add = function(element){
         const node = new Node(element);
         if (head === null) {
@@ -29,7 +30,8 @@ const LinkedList = function(){
         }
         length++;
     };
-
+    
+    //Remove an iteam 
     this.remove = function(element){
         let currentNode = head;
         let previousNode;
@@ -49,7 +51,8 @@ const LinkedList = function(){
     this.isEmpty = () =>{
         return length === 0;
     }
-
+    
+    //Find the index of specipic data
     this.indexOf = (element) =>{
         let currentNode = head;
         let index = -1;
@@ -63,7 +66,8 @@ const LinkedList = function(){
         }
         return -1;
     }
-
+    
+    //Find the element of specipic index
     this.elementAt = (index) =>{
         let currentNode = head;
         let count = 0;
@@ -73,7 +77,8 @@ const LinkedList = function(){
         }
         return currentNode.element;
     };
-
+    
+    //Add a node after a given node
     this.addAt = (index,element) =>{
         var node = new Node(element);
 
@@ -99,7 +104,8 @@ const LinkedList = function(){
         }
         length++;
     };
-
+    
+    //Remove a node after the specipic location
     this.removeAt = (index) =>{
         var currentNode = head;
         var previousNode;
