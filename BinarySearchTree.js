@@ -60,7 +60,7 @@ class BST{
         return current.data;
     }
     
-    //Find the spasepic data
+    //Find the specific data
     find(data){
         let current = this.root;
         while (current.data !== data) {
