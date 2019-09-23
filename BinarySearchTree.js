@@ -12,6 +12,7 @@ class BST{
         this.root = null
     }
 
+    //Add a data on the tree
     add(data){
         const node = this.root;
         if (node === null) {
@@ -41,6 +42,7 @@ class BST{
         }
     }
 
+    //Find the minimum value
     findMin(){
         let current = this.root
        while (current.left !== null) {
@@ -48,7 +50,8 @@ class BST{
         }
         return current.data;
     }
-
+    
+    //Find the maximum value
     findMax(){
         let current = this.root;
         while (current.right !== null) {
@@ -56,7 +59,8 @@ class BST{
         } 
         return current.data;
     }
-
+    
+    //Find the spasepic data
     find(data){
         let current = this.root;
         while (current.data !== data) {
@@ -72,7 +76,8 @@ class BST{
         }
         return current;
     }
-
+    
+    //Find the data is present in the tree or not?
     isPresent(data){
         let current = this.root;
         while (current) {
@@ -87,7 +92,8 @@ class BST{
         }
         return false;
     }
-
+    
+    //Remove the data from the tree
     removeData(data){
         const removeNode = (node,data)=>{
             if (node == null) {
